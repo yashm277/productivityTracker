@@ -55,7 +55,12 @@ public class MenuBar extends javax.swing.JFrame {
 
         jButton9.setBackground(new java.awt.Color(215, 142, 237));
         jButton9.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        jButton9.setText("Expected Grades");
+        jButton9.setText("Grades");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,6 +107,12 @@ public class MenuBar extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+this.setVisible(false);
+new Grades().setVisible(true);
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
