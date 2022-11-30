@@ -119,10 +119,10 @@ public class loginForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public Student getStudentDetails(){
-        String user=jTextField1.getText();
-        String 
-    }
+//    public Student getStudentDetails(){
+//        String user=jTextField1.getText();
+//        String 
+//    }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 String user=jTextField1.getText();
