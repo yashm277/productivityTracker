@@ -119,9 +119,23 @@ public class loginForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public Student getStudentDetails(){
+        String user=jTextField1.getText();
+        String 
+    }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-this.setVisible(false);
-new MenuBar().setVisible(true);
+String user=jTextField1.getText();
+String pwd= new String (jPasswordField1.getPassword());
+if (user.equals("f20210001@pilani.bits-pilani.ac.in")&& pwd.equals("yashmundada")  ){
+    this.setVisible(false);
+    new MenuBar().setVisible(true);
+} else {
+    Error error = new Error();
+    error.setVisible(true);
+    error.isAlwaysOnTop();
+    error.changeTextjButton1("Invalid Username or Password");
+}
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
