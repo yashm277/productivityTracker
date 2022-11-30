@@ -159,11 +159,9 @@ public class signUpForm extends javax.swing.JFrame {
         //Sign up screen closes
         this.setVisible(false);
         //Course basket opens
-//        courseBasket basketInstance = new courseBasket();
-//        basketInstance.setVisible(true);
-//        //basketInstance.isAlwaysOnTop();
-        new courseBasket().setVisible(true);
-        
+        courseBasketWindow basketInstance = new courseBasketWindow();
+        basketInstance.setVisible(true);
+        basketInstance.isAlwaysOnTop();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
