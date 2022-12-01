@@ -148,11 +148,10 @@ new loginForm().setVisible(true);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        try {
-            new StickyNote().setVisible(true);
-        } catch (IOException ex) {
-            Logger.getLogger(MenuBar.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        NoteDialog nd = new NoteDialog();
+        nd.setVisible(true);
+        nd.setLocationRelativeTo(null);
+        nd.isAlwaysOnTop();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
