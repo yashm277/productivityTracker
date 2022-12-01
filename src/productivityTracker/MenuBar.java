@@ -4,6 +4,10 @@
  */
 package productivityTracker;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author yashmundada
@@ -15,6 +19,7 @@ public class MenuBar extends javax.swing.JFrame {
      */
     public MenuBar() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -49,6 +54,11 @@ public class MenuBar extends javax.swing.JFrame {
         jButton7.setBackground(new java.awt.Color(215, 142, 237));
         jButton7.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jButton7.setText("Quicknotes");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setBackground(new java.awt.Color(215, 142, 237));
         jButton8.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
@@ -136,6 +146,14 @@ this.setVisible(false);
 new loginForm().setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        try {
+            new StickyNote().setVisible(true);
+        } catch (IOException ex) {
+            Logger.getLogger(MenuBar.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
