@@ -40,7 +40,6 @@ public class ForgotPassDialog extends javax.swing.JFrame {
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sticky/check-mark (1).gif"))); // NOI18N
-        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(200, 40, 130, 110);
 
