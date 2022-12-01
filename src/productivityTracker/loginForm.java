@@ -168,7 +168,9 @@ if (user.equals("f20210001@pilani.bits-pilani.ac.in")&& pwd.equals("yashmundada"
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        new ForgotPassDialog().setVisible(true);
+       ForgotPassDialog fp =  new ForgotPassDialog();
+       fp.setVisible(true);
+       fp.isAlwaysOnTop();
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**
