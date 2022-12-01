@@ -114,14 +114,14 @@ public class MenuBar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-this.setVisible(false);
-new Grades().setVisible(true);
+        this.setVisible(false);
+        new Grades().setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-this.setVisible(false);
-new loginForm().setVisible(true);
+        this.setVisible(false);
+        new loginForm().setVisible(true);
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 

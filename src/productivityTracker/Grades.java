@@ -15,6 +15,7 @@ public class Grades extends javax.swing.JFrame {
      */
     public Grades() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
