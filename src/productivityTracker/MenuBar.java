@@ -68,6 +68,11 @@ public class MenuBar extends javax.swing.JFrame {
         jButton8.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jButton8.setForeground(new java.awt.Color(255, 255, 255));
         jButton8.setText("Productive Hours");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setBackground(new java.awt.Color(102, 102, 255));
         jButton9.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
@@ -175,6 +180,14 @@ public class MenuBar extends javax.swing.JFrame {
         nd.setLocationRelativeTo(null);
         nd.isAlwaysOnTop();
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+       Prod_hours p1= new Prod_hours();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments
