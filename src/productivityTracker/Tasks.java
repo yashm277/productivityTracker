@@ -22,9 +22,9 @@ public class Tasks {
     Task s=new Task();
     public void add_task()
     {
-        System.out.print("Enter Task:");
-        s.t=myObj.nextLine();
-        s.x=false;
+        
+        s.t = "";
+        s.x = false;
         tasks.add(s);
     }
    // int n=tasks.size();
