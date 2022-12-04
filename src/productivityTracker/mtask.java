@@ -23,15 +23,15 @@ public class mtask extends javax.swing.JFrame {
        this.setVisible(false);
         if(n==0)
             j1.setText(p);
-         else if(n==1)
+        else if(n==1)
             j2.setText(p);
-         else if(n==2)
+        else if(n==2)
             j3.setText(p);
-         else if(n==3)
+        else if(n==3)
             j4.setText(p);
-         else if(n==4)
+        else if(n==4)
             j5.setText(p);
-         n++; 
+        n++; 
     }
     
 
