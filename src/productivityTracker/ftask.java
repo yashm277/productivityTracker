@@ -16,7 +16,7 @@ public class ftask extends javax.swing.JFrame {
     public ftask() {
         initComponents();
     }
-    int ftask=0;
+    int n=0;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
