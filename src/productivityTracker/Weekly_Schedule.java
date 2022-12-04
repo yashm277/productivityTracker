@@ -37,6 +37,7 @@ public class Weekly_Schedule extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(102, 102, 102));
 
         B1.setText("MONDAY");
         B1.addActionListener(new java.awt.event.ActionListener() {

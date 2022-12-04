@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package oops;
+package productivityTracker;
 
 /**
  *
@@ -112,6 +112,7 @@ public class timetable extends javax.swing.JFrame {
         jTextField70 = new javax.swing.JTextField();
         jTextField71 = new javax.swing.JTextField();
         jTextField72 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -401,6 +402,14 @@ public class timetable extends javax.swing.JFrame {
         jTextField72.setText("Enter Class");
         jPanel2.add(jTextField72);
 
+        jButton1.setText("Go Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton1);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -449,6 +458,10 @@ public class timetable extends javax.swing.JFrame {
     private void cell2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cell2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cell2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -504,6 +517,7 @@ public class timetable extends javax.swing.JFrame {
     private oops.Cell cell71;
     private oops.Cell cell78;
     private oops.Cell cell8;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
