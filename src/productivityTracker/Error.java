@@ -44,6 +44,11 @@ public class Error extends javax.swing.JFrame {
                 jButton1InputMethodTextChanged(evt);
             }
         });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("OK, Exit");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +103,10 @@ this.setVisible(false);        // TODO add your handling code here:
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1InputMethodTextChanged
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public void changeTextjButton1(String text){
         jButton1.setText(text);

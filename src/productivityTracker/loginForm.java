@@ -4,6 +4,16 @@
  */
 package productivityTracker;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author yashmundada
@@ -172,9 +182,34 @@ public class loginForm extends javax.swing.JFrame {
 //    }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-String user=jTextField1.getText();
+//String user=jTextField1.getText();
+//String pwd= new String (jPasswordField1.getPassword());
+//if (user.equals("f20210001@pilani.bits-pilani.ac.in")&& pwd.equals("yashmundada")  ){
+//    this.setVisible(false);
+//    new MenuBar().setVisible(true);
+//} else {
+//    Error error = new Error();
+//    error.setVisible(true);
+//    error.isAlwaysOnTop();
+//    error.changeTextjButton1("Invalid Username or Password");
+//}
+// new code for login 
+            File f = new File("src/users/"+jTextField1.getText());
+//File f = new File("src/users/yash");
+            String path = "src/users/"+jTextField1.getText()+"/personalDetails.txt";
+            String user=jTextField1.getText();
+            //logic for login
+            String password = null;
+        try {
+            password = Files.readAllLines(Paths.get(path)).get(2);
+        } catch (IOException ex) {
+            Logger.getLogger(loginForm.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println(password);
 String pwd= new String (jPasswordField1.getPassword());
-if (user.equals("f20210001@pilani.bits-pilani.ac.in")&& pwd.equals("yashmundada")  ){
+boolean logic = f.exists()&&pwd.equals(password);
+//boolean logic = f.exists()&&;
+if (logic){
     this.setVisible(false);
     new MenuBar().setVisible(true);
 } else {
@@ -183,6 +218,16 @@ if (user.equals("f20210001@pilani.bits-pilani.ac.in")&& pwd.equals("yashmundada"
     error.isAlwaysOnTop();
     error.changeTextjButton1("Invalid Username or Password");
 }
+
+//            BufferedReader reader = new BufferedReader(new FileReader("src/users/"+jTextField1.getText()+"/"+jTextField1.getText()+".txt"));
+//            System.out.println(reader.readLine());
+//            reader.close();
+//            // TODO add your handling code here:
+//        } catch (FileNotFoundException ex) {
+//            Logger.getLogger(loginForm.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (IOException ex) {
+//            Logger.getLogger(loginForm.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 

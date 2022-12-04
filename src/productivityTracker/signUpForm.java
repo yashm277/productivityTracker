@@ -4,9 +4,18 @@
  */
 package productivityTracker;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
- * @author amarp
+ * @author yashmundada
  */
 public class signUpForm extends javax.swing.JFrame {
 
@@ -147,7 +156,8 @@ public class signUpForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
+        
+// TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -155,13 +165,44 @@ public class signUpForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        //Sign up screen closes
-        this.setVisible(false);
-        //Course basket opens
-        courseBasketWindow basketInstance = new courseBasketWindow();
-        basketInstance.setVisible(true);
-        basketInstance.isAlwaysOnTop();
+        BufferedWriter writer = null;
+        BufferedWriter writerfirst = null;
+        try {
+            // TODO add your handling code here:
+            //userfiles created....
+            File f = new File("src/users/"+jTextField2.getText());
+            if(!f.exists()){
+                if(f.mkdir()){
+                    System.out.println("created folder");
+                }else{
+                    System.out.println("could not create");
+                }
+            }else{
+                System.out.println("account already exists");
+            }
+            writerfirst = new BufferedWriter(new FileWriter("src/users/allSignUps.txt"));
+            writer = new BufferedWriter(new FileWriter("src/users/"+jTextField2.getText()+"/"+"personalDetails"+".txt"));
+            writerfirst.write("\n"+jTextField1.getText());
+            writerfirst.write("\n"+jTextField2.getText());
+            writerfirst.write("\n"+jTextField3.getText());
+            writer.write(jTextField1.getText());
+            writer.write("\n"+jTextField2.getText());
+            writer.write("\n"+jTextField3.getText());
+            //Sign up screen closes
+            this.setVisible(false);
+            //Course basket opens
+            courseBasketWindow basketInstance = new courseBasketWindow();
+            basketInstance.setVisible(true);
+            basketInstance.isAlwaysOnTop();
+        } catch (IOException ex) {
+            Logger.getLogger(signUpForm.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                writer.close();
+            } catch (IOException ex) {
+                Logger.getLogger(signUpForm.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
