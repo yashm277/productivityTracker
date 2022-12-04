@@ -20,7 +20,7 @@ public class Tasks {
 
     ArrayList<Task> tasks = new ArrayList<>();
     Task s=new Task();
-    public void addtask()
+    public void add_task()
     {
         System.out.print("Enter Task:");
         s.t=myObj.nextLine();
@@ -30,7 +30,7 @@ public class Tasks {
    // int n=tasks.size();
     // Task s1=new Task();
     
-    public String gettask(int i)
+    public String get_task(int i)
     {
         //  s1=tasks.get(i);
                return tasks.get(i).t;

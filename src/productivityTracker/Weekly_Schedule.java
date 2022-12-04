@@ -127,31 +127,59 @@ public class Weekly_Schedule extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void B1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B1ActionPerformed
+       mtask p1= new mtask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
         // TODO add your handling code here:
     }//GEN-LAST:event_B1ActionPerformed
 
     private void B2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B2ActionPerformed
-        // TODO add your handling code here:
+        ttask p1= new ttask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling code here:
     }//GEN-LAST:event_B2ActionPerformed
 
     private void B3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B3ActionPerformed
-        // TODO add your handling code here:
+        wtask p1= new wtask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling codes here:
     }//GEN-LAST:event_B3ActionPerformed
 
     private void B4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B4ActionPerformed
-        // TODO add your handling code here:
+        thtask p1= new thtask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling code here:
     }//GEN-LAST:event_B4ActionPerformed
 
     private void B5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B5ActionPerformed
-        // TODO add your handling code here:
+        ftask p1= new ftask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling code here:
     }//GEN-LAST:event_B5ActionPerformed
 
     private void B6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B6ActionPerformed
-        // TODO add your handling code here:
+        stask p1= new stask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling code here:
     }//GEN-LAST:event_B6ActionPerformed
 
     private void B7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B7ActionPerformed
-        // TODO add your handling code here:
+        sutask p1= new sutask();
+       p1.setVisible(true);
+       p1.setLocationRelativeTo(null);
+       p1.isAlwaysOnTop();
+// TODO add your handling code here:
     }//GEN-LAST:event_B7ActionPerformed
 
     /**
