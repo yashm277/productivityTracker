@@ -1105,6 +1105,8 @@ public class Prod_hours extends javax.swing.JFrame {
         
         Prod_stats p1= new Prod_stats();
         p1.setVisible(true);
+        p1.setLocationRelativeTo(null);
+        p1.isAlwaysOnTop();
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
