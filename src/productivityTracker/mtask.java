@@ -6,22 +6,17 @@ package productivityTracker;
 
 /**
  *
- * @author Aditya Khandelwal
+ * @author coder
  */
 public class mtask extends javax.swing.JFrame {
 
     /**
-     * Creates new form mtask
+     * Creates new form motask
      */
     public mtask() {
         initComponents();
     }
-    Tasks tm= new Tasks();
-    static int n=0;
-        
-    }
-    
-
+    int n=0;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -217,17 +212,17 @@ public class mtask extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if(n==0)
-            j1.setText(jTextField1.getText());
+        j1.setText(jTextField1.getText());
         else if(n==1)
-            j2.setText(jTextField1.getText());
+        j2.setText(jTextField1.getText());
         else if(n==2)
-            j3.setText(jTextField1.getText());
+        j3.setText(jTextField1.getText());
         else if(n==3)
-            j4.setText(jTextField1.getText());
+        j4.setText(jTextField1.getText());
         else if(n==4)
-            j5.setText(jTextField1.getText());
-        n++; 
-       
+        j5.setText(jTextField1.getText());
+        n++;
+
         // c1.setText(tm.get_task(n));
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -255,7 +250,7 @@ public class mtask extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
-      
+
     /**
      * @param args the command line arguments
      */
@@ -281,6 +276,7 @@ public class mtask extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(mtask.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
