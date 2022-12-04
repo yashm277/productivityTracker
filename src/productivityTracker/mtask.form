@@ -38,36 +38,44 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="0" pref="361" max="32767" attributes="0"/>
-                          <Component id="jButton1" min="-2" pref="160" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="j5" pref="246" max="32767" attributes="0"/>
-                              <Component id="j4" alignment="1" pref="246" max="32767" attributes="0"/>
-                              <Component id="j3" alignment="1" max="32767" attributes="0"/>
-                              <Component id="j2" alignment="1" max="32767" attributes="0"/>
-                              <Component id="j1" alignment="1" max="32767" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                          <Component id="c1" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
-                                          <Component id="c2" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Component id="c3" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="c4" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="0" pref="361" max="32767" attributes="0"/>
+                                  <Component id="jButton1" min="-2" pref="160" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="c5" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="j5" pref="246" max="32767" attributes="0"/>
+                                      <Component id="j4" alignment="1" pref="246" max="32767" attributes="0"/>
+                                      <Component id="j3" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="j2" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="j1" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                  <Component id="c1" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                                                  <Component id="c2" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="c3" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="c4" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="c5" alignment="1" min="-2" pref="85" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -77,7 +85,9 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="j1" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="c1" min="-2" max="-2" attributes="0"/>
@@ -186,6 +196,14 @@
         <Component class="javax.swing.JCheckBox" name="c5">
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="c5ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Back"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
