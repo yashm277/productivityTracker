@@ -25,19 +25,19 @@ public class Tabbedpane extends javax.swing.JFrame {
     public Tabbedpane() throws FileNotFoundException, IOException {
         initComponents();
         setLocationRelativeTo(null);
-        BufferedReader br1 = new BufferedReader(new FileReader("src\\Sticky\\Course01.txt"));
+        BufferedReader br1 = new BufferedReader(new FileReader("src/Sticky/Course01.txt"));
         String data1 = br1.readLine();
         jTextArea5.setText(data1);
-        BufferedReader br2 = new BufferedReader(new FileReader("src\\Sticky\\Course02.txt"));
+        BufferedReader br2 = new BufferedReader(new FileReader("src/Sticky/Course02.txt"));
         String data2 = br2.readLine();
         jTextArea4.setText(data2);
-        BufferedReader br3 = new BufferedReader(new FileReader("src\\Sticky\\Course03.txt"));
+        BufferedReader br3 = new BufferedReader(new FileReader("src/Sticky/Course03.txt"));
         String data3 = br3.readLine();
         jTextArea3.setText(data3);
-        BufferedReader br4 = new BufferedReader(new FileReader("src\\Sticky\\Course04.txt"));
+        BufferedReader br4 = new BufferedReader(new FileReader("src/Sticky/Course04.txt"));
         String data4 = br4.readLine();
         jTextArea2.setText(data4);
-        BufferedReader br5 = new BufferedReader(new FileReader("src\\Sticky\\Course05.txt"));
+        BufferedReader br5 = new BufferedReader(new FileReader("src/Sticky/Course05.txt"));
         String data5 = br5.readLine();
         jTextArea1.setText(data5);
     }
@@ -398,7 +398,7 @@ public class Tabbedpane extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\Course01.txt");
+            pw = new PrintWriter("src/Sticky/Course01.txt");
             pw.print(jTextArea5.getText());
         }
         catch(FileNotFoundException ex) {}
@@ -411,7 +411,7 @@ public class Tabbedpane extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\Course02.txt");
+            pw = new PrintWriter("src/Sticky/Course02.txt");
             pw.print(jTextArea4.getText());
         }
         catch(FileNotFoundException ex) {}
@@ -424,7 +424,7 @@ public class Tabbedpane extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\Course03.txt");
+            pw = new PrintWriter("src/Sticky/Course03.txt");
             pw.print(jTextArea3.getText());
         }
         catch(FileNotFoundException ex) {}
@@ -437,7 +437,7 @@ public class Tabbedpane extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\Course04.txt");
+            pw = new PrintWriter("src/Sticky/Course04.txt");
             pw.print(jTextArea2.getText());
         }
         catch(FileNotFoundException ex) {}
@@ -450,7 +450,7 @@ public class Tabbedpane extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\Course05.txt");
+            pw = new PrintWriter("src/Sticky/Course05.txt");
             pw.print(jTextArea1.getText());
         }
         catch(FileNotFoundException ex) {}

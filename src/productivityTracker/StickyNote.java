@@ -25,7 +25,7 @@ public class StickyNote extends javax.swing.JFrame {
     public StickyNote() throws FileNotFoundException, IOException {
         initComponents();
         setLocationRelativeTo(null);
-        BufferedReader br = new BufferedReader(new FileReader("src\\Sticky\\StickyData.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("src/Sticky/StickyData.txt"));
         String data = br.readLine();
         jTextArea1.setText(data);
     }
@@ -131,7 +131,7 @@ public class StickyNote extends javax.swing.JFrame {
         PrintWriter pw = null;
         try {
             FileWriter fw = null;
-            pw = new PrintWriter("src\\Sticky\\StickyData.txt");
+            pw = new PrintWriter("src/Sticky/StickyData.txt");
             pw.print(jTextArea1.getText());
         }
         catch(FileNotFoundException ex) {}
