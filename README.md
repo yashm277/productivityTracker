@@ -1,4 +1,4 @@
-# productivityTracker2
+# productivityTracker
 Minimalist Java desktop app to track student productivity throughout the day, manage his/her time table/grades, maintain notes, etc. using simple t stats to help you be more aware of the time you're doing what you should be doing, generating an activity map for the whole year, maintaining a To-do list, list his/her expected grades.. Java Swing GUI.
 
 xxxxxxx-------------------------xxxxxxxxxx
